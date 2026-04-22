@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./components/Card";
 
 const App = () => {
   return (
@@ -6,11 +7,11 @@ const App = () => {
       <div className="card">
         <h1>Salman Khan</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque
-          ipsa nesciunt veritatis repudiandae iure unde ducimus et, eius quae
-          voluptatum natus repellat rem ea ipsam possimus sit soluta distinctio.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
+
+      <Card />
     </div>
   );
 };

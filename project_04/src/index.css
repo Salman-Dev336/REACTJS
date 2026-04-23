@@ -2,17 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: fantasy;
+  font-family: 'times new roman';
 }
 
 html,
 body{
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
 .parent{
   height: 100px;
   width: 100px;
-  background-color: #111;
+  background-color: whitesmoke;
 }
+
+.card{
+  height: 400px;
+  width: 300px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+

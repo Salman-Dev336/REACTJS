@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,16 +7,24 @@
 }
 
 html,
-body{
+body {
   height: 100%;
   width: 100%;
 }
 
-.card{
-  background-color:chartreuse;
+.card {
+  background-color: chartreuse;
   border-radius: 10px;
   margin: 20px;
+  margin-top: 20px;
   /* height: 20px; */
   padding: 20px;
+
 }
 
+.nav{
+  background-color: chocolate;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}

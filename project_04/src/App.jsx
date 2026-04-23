@@ -12,7 +12,7 @@ const App = () => {
           />
           <button>
             Save
-            <Bookmark />
+            <Bookmark size={14} />
           </button>
         </div>
         <div className="center">
@@ -27,12 +27,10 @@ const App = () => {
         </div>
         <div className="bottom">
           <div>
-            <div>
-              <h4>$120/hr</h4>
-              <p>kpk, Pakistan</p>
-            </div>
-            <button>Apply Now</button>
+            <h3>$120/hr</h3>
+            <p>kpk, Pakistan</p>
           </div>
+          <button>Apply Now</button>
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ const App = () => {
   return (
     <div className="parent">
       <Card user = 'Salman Khan' age = {22}/>
+      <Card user = 'Sharukh Khan' age = {25}/>
+
     </div>
   );
 };

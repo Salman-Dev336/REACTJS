@@ -1,15 +1,11 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
 
-
 const Card = (props) => {
   return (
     <div className="card">
       <div className="top">
-        <img
-          src={props.logo}
-          alt=""
-        />
+        <img src={props.logo} alt="" />
         <button>
           Save
           <Bookmark size={14} />

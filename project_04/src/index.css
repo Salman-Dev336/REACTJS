@@ -1,4 +1,4 @@
-*{
+* {
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
@@ -6,13 +6,13 @@
 }
 
 html,
-body{
+body {
   height: 100%;
   width: 100%;
   background-color: whitesmoke;
 }
 
-.parent{
+.parent {
   /* height: 100%; */
   min-height: 100vh;
   width: 100%;
@@ -23,9 +23,9 @@ body{
 
 }
 
-.card{
+.card {
   padding: 5px;
-  height: 350px;
+  height: 380px;
   width: 290px;
   background-color: white;
   border-radius: 20px;
@@ -34,13 +34,13 @@ body{
   justify-content: space-evenly;
 }
 
-.card .top{
+.card .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top img{
+.top img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -48,18 +48,19 @@ body{
   border: 1px solid #dadada;
 }
 
-.top button{
-display: flex;
-align-items: center;
-border: 1px solid #dadada;
-height: 25px;
-padding: 3px 6px;
-border-radius: 5px;
-font-size: 12px;
-background-color: transparent;
-color: #b1b1b1;
+.top button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  height: 25px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: transparent;
+  color: #b1b1b1;
 }
-.bottom{
+
+.bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,35 +68,37 @@ color: #b1b1b1;
   padding-top: 10px;
 
 }
-.center{
+
+.center {
   margin-bottom: 30px;
   margin-top: 0px;
 }
 
 
-.center h3{
+.center h3 {
   font-size: 18px;
   font-weight: 400;
 }
 
-.center h3 span{
+.center h3 span {
   font-size: 13px;
   color: #8b8b8b;
   font-weight: 300;
 
 }
-.center h2{
+
+.center h2 {
   font-size: 22px;
 
 
 }
 
-.center .tag{
+.center .tag {
   display: flex;
   margin-top: 10px;
 }
 
-.center .tag h4{
+.center .tag h4 {
   font-size: 14px;
   background-color: #ede9e9;
   padding: 8px 8px;
@@ -103,32 +106,43 @@ color: #b1b1b1;
   margin-left: 0px;
 }
 
-.bottom button{
+.bottom button {
   background-color: black;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
   border: none;
   column-width: 600px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 
-  
+
 }
 
-.bottom button:hover{
+.bottom button:hover {
   background-color: aqua;
+  width: 180px;
+  transform: translateY(-5px);
   color: black;
 }
-.bottom h3{
+
+.bottom h3 {
   font-size: 18px;
 }
 
-.bottom p{
+.bottom p {
   font-size: 12px;
   color: #8b8b8b;
   font-weight: 300;
 }
 
-.bottom{
+.bottom {
   /* margin-bottom: 20px; */
   margin-top: 0px;
 }

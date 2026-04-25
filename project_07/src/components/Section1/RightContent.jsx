@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const RightContent = () => {
-  return (
-    <div className='h-full w-2/3 bg-green-300'>RightContent</div>
-  )
-}
+  return <div className="h-full w-2/3"></div>;
+};
 
-export default RightContent
+export default RightContent;

@@ -1,7 +1,7 @@
 import React from "react";
 
 const RightContent = () => {
-  return <div className="h-full w-2/3"></div>;
+  return <div className="h-full w-2/3 bg-gray-200"></div>;
 };
 
 export default RightContent;

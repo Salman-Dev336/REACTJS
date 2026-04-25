@@ -5,7 +5,7 @@ const HeroText = () => {
     <div className="p-6">
         <h3 className="mb-7 text-5xl font-bold leading-[1.2]">
           Prospective <br />{" "}
-          <span className="text-purple-800">customer </span>
+          <span className="bg-gray-600 text-white rounded-2xl px-5 ">customer </span>
           <br /> segmentation
         </h3>
         <p className="text-lg font-medium text-gray-400">

@@ -15,11 +15,21 @@ const App = () => {
 
   return (
     <div>
-      <h1>hello salman</h1>
-      <button onClick={function(){
+      
+      <input onClick={()=>{
+        console.log("clicked on input");
+      }
+        
+        
+      } type="text" placeholder="enter name " />
+
+
+
+      {/* <h1>hello salman</h1>
+      <button onClick={()=>{
         console.log("btn Clicked ");
         
-      }}>click here </button>
+      }}>click here </button> */}
     </div>
   );
 };

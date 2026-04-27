@@ -13,17 +13,16 @@ const App = () => {
     console.log("mouseLeave");
   }
 
-  function inputChanging(){
+  function inputChanging() {
     console.log("user is typing ");
-    
   }
 
   return (
     <div>
-      
-      <input onChange={inputChanging} type="text" placeholder="enter name " />
-
-
+      <input onChange={function(element){
+        console.log(element);
+        
+      }} type="text" placeholder="enter name " />
 
       {/* <h1>hello salman</h1>
       <button onClick={()=>{

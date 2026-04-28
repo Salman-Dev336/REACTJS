@@ -8,13 +8,31 @@
 html,
 body{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
 }
 
 
 
-.box{
+/* .box{
     height: 200px;
     width: 200;
     background-color: brown;
+} */
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(124, 43, 178);
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(212, 52, 92);
 }

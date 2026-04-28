@@ -1,8 +1,13 @@
 import React from "react";
 
 const App = () => {
+
+  const pageScrolling= ()=>{
+    console.log("page is scrolling");
+    
+  }
   return (
-    <div>
+    <div onWheel={pageScrolling}>
 
 
       <div className="page1"></div>

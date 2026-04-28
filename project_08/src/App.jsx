@@ -7,7 +7,11 @@ const App = () => {
     
   }
   return (
-    <div onWheel={pageScrolling}>
+    <div onWheel={(element)=>{
+      console.log(element);
+      
+      // pageScrolling(element)
+    }}>
 
 
       <div className="page1"></div>

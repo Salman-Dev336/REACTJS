@@ -20,7 +20,9 @@ const App = () => {
   return (
     <div>
       <input onChange={function(element){
+        inputChanging();
         console.log(element.target.value);
+
         
       }} type="text" placeholder="enter name " />
 

@@ -2,15 +2,15 @@ import React from "react";
 
 const App = () => {
 
-  const pageScrolling= ()=>{
-    console.log("page is scrolling");
+  const pageScrolling= (value)=>{
+    console.log(value);
     
   }
   return (
     <div onWheel={(element)=>{
-      console.log(element);
+      // console.log(element.deltaY);
       
-      // pageScrolling(element)
+      pageScrolling(element.deltaY)
     }}>
 
 

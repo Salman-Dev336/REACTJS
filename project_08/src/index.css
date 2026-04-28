@@ -15,3 +15,9 @@ input{
     margin: 10px;
     padding: 10px;
 }
+
+.box{
+    height: 200px;
+    width: 200;
+    background-color: brown;
+}

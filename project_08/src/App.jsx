@@ -3,7 +3,15 @@ import React from "react";
 const App = () => {
 
   const pageScrolling= (value)=>{
-    console.log( "page scrolling at speed",value);
+    if(value>0){
+      console.log("seedha scrolling");
+      
+    }
+    else{
+      console.log("ult scrolling ");
+      
+    }
+    // console.log( "page scrolling at speed",value);
     
   }
   return (

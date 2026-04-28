@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
 
   const pageScrolling= (value)=>{
-    console.log(value);
+    console.log( "page scrolling at speed",value);
     
   }
   return (

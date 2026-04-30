@@ -3,12 +3,16 @@ import React, { useState } from "react";
 const App = () => {
   const [num, setnum] = useState(20);
   const [username, setusername] = useState("Salman");
+  const [users, setUsers] = useState([10,20,30]);
 
   function changeNum() {
     setnum(100);
     setusername("Sharukh Khan");
+    setUsers([40,50,60]);
     console.log(num);
     console.log(username);
+    console.log(users);
+    
     
     
   }
@@ -25,6 +29,8 @@ const App = () => {
       <h1>value of num is {num}</h1>
       <br />
       <h1>my name is {username}</h1>
+      <br />
+      <h1>my roll no is {users}</h1>
       <button onClick={changeNum}>click me</button>
     </div>
   );

@@ -5,7 +5,11 @@
     const [num, setnum] = useState(20);
 
     function changeNum(){
+        console.log(num);
+        
         setnum(100)        
+        console.log(num);
+        
 
     }
 

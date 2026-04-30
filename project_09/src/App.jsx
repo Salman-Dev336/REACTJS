@@ -10,11 +10,23 @@ const App = () => {
     setnum(num - 1);
   }
 
+  function jumpByFive() {
+    setnum(num + 5);
+  }
+
+    function minusFive() {
+    setnum(num - 5);
+  }
+
   return (
     <div>
       <h1>{num}</h1>
       <button onClick={increament}>increase</button>
       <button onClick={decreament}>decrease</button>
+      <button onClick={jumpByFive}>jump by 5</button>
+      <button onClick={minusFive}>decrement by 5</button>
+
+
     </div>
   );
 };

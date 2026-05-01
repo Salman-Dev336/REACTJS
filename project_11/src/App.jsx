@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 
 const App = () => {
-  
-  const [email, setemail] = useState('salma123@gmail.com');
+  const [email, setemail] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+    console.log("form submitted by: ", email);
+    setemail('')
   };
 
   return (
@@ -21,9 +21,9 @@ const App = () => {
           type="text"
           placeholder="Enter your email"
           value={email}
-          // onChange={(e) => {
-          //   console.log(e.target.value);
-          // }}
+          onChange={(e) => {
+            setemail(e.target.value);
+          }}
         />
         <input type="text" placeholder="Enter your password" />
         <button>Submit</button>

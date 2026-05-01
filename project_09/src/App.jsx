@@ -3,19 +3,34 @@ import React, { useState } from "react";
 const App = () => {
   const [num, setnum] = useState(0);
 
-  const [name, setname] = useState({user:'salman', age:22});
+  const [arr, setarr] = useState([10, 20, 30]);
 
-  const btnClicked = ()=>{
+  const [name, setname] = useState({ user: "salman", age: 22 });
+
+  const changeArray = ()=>{
+
+    const newArry = [...arr];
+    newArry.push(40);
+    setarr(newArry);
+    console.log(newArry);
+    
+
+  }
+
+
+
+
+
+  const btnClicked = () => {
+
     console.log(name.user);
     console.log(name.age);
-    
 
-    const newName = {...name};
-    newName.user = 'amir khan'
-    newName.age = 44
-    setname(newName)
-    
-  }
+    const newName = { ...name };
+    newName.user = "amir khan";
+    newName.age = 44;
+    setname(newName);
+  };
 
   function increament() {
     setnum(num + 1);
@@ -35,12 +50,16 @@ const App = () => {
   return (
     <div>
       <h1>{num}</h1>
-      <h1>{name.user}, {name.age}</h1>
+      <h1>
+        {name.user}, {name.age}
+      </h1>
+      <h1>{arr}</h1>
       <button onClick={increament}>increase</button>
       <button onClick={decreament}>decrease</button>
       <button onClick={jumpByFive}>jump by 5</button>
       <button onClick={minusFive}>decrementby5</button>
       <button onClick={btnClicked}>click here</button>
+      <button onClick={changeArray}>click for array</button>
     </div>
   );
 };

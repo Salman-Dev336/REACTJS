@@ -1,12 +1,21 @@
 import React from 'react'
 
 const App = () => {
+
+  const submitHandler = (e)=>{
+    e.preventDefault();
+    console.log('form submitted');
+    
+  }
+
   return (
     <div>
-      <form action="">
-        <input type="text"/>
-        <input type="text" />
-        <button>Login</button>
+      <form onSubmit={(e)=>{
+        submitHandler(e);
+      }}>
+        <input type="text" placeholder='Enter your email'/>
+        <input type="text" placeholder='Enter your password'/>
+        <button>Submit</button>
 
       </form>
     </div>

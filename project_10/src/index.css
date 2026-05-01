@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+html,
+body{
+  height: 100vh;
+  width: 100vh;
+  background-color: aqua;
+}
+
+input, button{
+  padding: 10px 30px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+
+}
+
+button:hover{
+  background-color: rgb(180, 90, 0);
+  color: white;
+  border-radius: 20px;
+}

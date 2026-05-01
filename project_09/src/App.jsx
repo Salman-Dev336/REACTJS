@@ -3,6 +3,20 @@ import React, { useState } from "react";
 const App = () => {
   const [num, setnum] = useState(0);
 
+  const [name, setname] = useState({user:'salman', age:22});
+
+  const btnClicked = ()=>{
+    console.log(name.user);
+    console.log(name.age);
+    
+
+    const newName = {...name};
+    newName.user = 'amir khan'
+    newName.age = 44
+    setname(newName)
+    
+  }
+
   function increament() {
     setnum(num + 1);
   }
@@ -14,19 +28,19 @@ const App = () => {
     setnum(num + 5);
   }
 
-    function minusFive() {
+  function minusFive() {
     setnum(num - 5);
   }
 
   return (
     <div>
       <h1>{num}</h1>
+      <h1>{name.user}, {name.age}</h1>
       <button onClick={increament}>increase</button>
       <button onClick={decreament}>decrease</button>
       <button onClick={jumpByFive}>jump by 5</button>
-      <button onClick={minusFive}>decrement by 5</button>
-
-
+      <button onClick={minusFive}>decrementby5</button>
+      <button onClick={btnClicked}>click here</button>
     </div>
   );
 };

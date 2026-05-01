@@ -7,29 +7,23 @@ const App = () => {
 
   const [name, setname] = useState({ user: "salman", age: 22 });
 
-  const changeArray = ()=>{
-
+  const changeArray = () => {
     const newArry = [...arr];
     newArry.push(40);
     setarr(newArry);
     console.log(newArry);
-    
-
-  }
-
-
-
-
+  };
 
   const btnClicked = () => {
-
     console.log(name.user);
     console.log(name.age);
 
-    const newName = { ...name };
-    newName.user = "amir khan";
-    newName.age = 44;
-    setname(newName);
+    setname(prev=>({...prev, user:'amir khan', age: 44}))
+
+    // const newName = { ...name };
+    // newName.user = "amir khan";
+    // newName.age = 44;
+    // setname(newName);
   };
 
   function increament() {

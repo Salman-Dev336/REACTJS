@@ -5,9 +5,9 @@ const App = () => {
     e.preventDefault();
   };
   return (
-    <div className="h-screen lg:flex bg-black ">
-      {/* <div>
-        <nav className="h-20 flex justify-between ">
+    <div className="h-screen bg-black ">
+      <div>
+        <nav className="h-20 flex justify-between">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
           <img
             className="rotate-y-180 h-15  w-15"
@@ -15,14 +15,14 @@ const App = () => {
             alt=""
           />
         </nav>
-      </div> */}
-      <form
-        onSubmit={(e) => {
-          submitHandler(e);
-        }}
-        className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
-      >
-       
+      </div>
+      <div className="lg:flex">
+        <form
+          onSubmit={(e) => {
+            submitHandler(e);
+          }}
+          className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
+        >
           <input
             type="text"
             placeholder="Enter Notes Heading"
@@ -36,15 +36,14 @@ const App = () => {
           <button className="text-black w-full  bg-white border-2 px-5 py-2 hover:bg-blue-400 hover:text-black rounded-2xl">
             Add Note
           </button>
-      </form>
-      <div className="  p-10 lg:w-1/2 bg-gray-900">
-      <h1 className="text-white text-xl font-bold">Your Notes</h1>
-      <div className="flex flex-wrap gap-5">
-          <div className="h-52 w-40 rounded-2xl bg-white">
+        </form>
+        <div className="  p-10 lg:w-1/2 bg-gray-900 lg:h-screen">
+          <h1 className="text-white text-xl font-bold">Your Notes</h1>
+          <div className="flex flex-wrap gap-5 mt-10">
+            <div className="h-52 w-40 rounded-2xl bg-white"></div>
+            <div className="h-52 w-40 rounded-2xl bg-white"></div>
+          </div>
         </div>
-            <div className="h-52 w-40 rounded-2xl bg-white">
-        </div>
-      </div>
       </div>
     </div>
   );

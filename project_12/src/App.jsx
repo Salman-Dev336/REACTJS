@@ -37,7 +37,7 @@ const App = () => {
             Add Note
           </button>
         </form>
-        <div className="  p-10 lg:w-1/2 bg-gray-900 lg:h-screen">
+        <div className="  p-10 lg:w-1/2 bg-gray-900 flex flex-col items-start">
           <h1 className="text-white text-xl font-bold">Your Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10">
             <div className="h-52 w-40 rounded-2xl bg-white"></div>

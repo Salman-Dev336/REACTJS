@@ -1,11 +1,9 @@
 import React from "react";
 const App = () => {
-  const submitHandler = ()=>{
+  const submitHandler = (e)=>{
     console.log('form submitted');
-    
+    e.preventDefault();
   }
-
-
   return (
     <div className="h-screen bg-black ">
       <div>
@@ -18,7 +16,9 @@ const App = () => {
           />
         </nav>
       </div>
-      <form className="flex items-start p-10 justify-between">
+      <form onSubmit={(e)=>{
+        submitHandler(e);
+      }} className="flex items-start p-10 justify-between">
         <div className="flex items-start flex-col w-1/2 gap-4 ">
           <input
             type="text"

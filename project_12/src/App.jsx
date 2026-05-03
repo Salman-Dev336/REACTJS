@@ -5,7 +5,7 @@ const App = () => {
     e.preventDefault();
   };
   return (
-    <div className="h-screen lg:flex bg-black p-10  ">
+    <div className="h-screen lg:flex bg-black ">
       {/* <div>
         <nav className="h-20 flex justify-between ">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
@@ -37,12 +37,16 @@ const App = () => {
             Add Note
           </button>
       </form>
-      <div className="flex flex-wrap p-10  bg-gray-900">
-        <div className="h-32 w-32 rounded-2xl bg-white">
+      <div className="  p-10 lg:w-1/2 bg-gray-900">
+      <h1 className="text-white text-xl font-bold">Your Notes</h1>
+      <div className="flex flex-wrap gap-5">
+          <div className="h-52 w-40 rounded-2xl bg-white">
         </div>
+            <div className="h-52 w-40 rounded-2xl bg-white">
+        </div>
+      </div>
       </div>
     </div>
   );
 };
-
 export default App;

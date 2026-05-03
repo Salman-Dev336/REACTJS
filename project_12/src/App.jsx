@@ -1,13 +1,13 @@
 import React from "react";
 const App = () => {
-  const submitHandler = (e)=>{
-    console.log('form submitted');
+  const submitHandler = (e) => {
+    console.log("form submitted");
     e.preventDefault();
-  }
+  };
   return (
-    <div className="h-screen bg-black ">
+    <div className="h-screen bg-black p-10  ">
       <div>
-        <nav className="h-20 flex justify-between p-10">
+        <nav className="h-20 flex justify-between ">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
           <img
             className="rotate-y-180 h-15  w-15"
@@ -16,10 +16,13 @@ const App = () => {
           />
         </nav>
       </div>
-      <form onSubmit={(e)=>{
-        submitHandler(e);
-      }} className="flex items-start p-10 justify-between">
-        <div className="flex items-start flex-col w-1/2 gap-4 ">
+      <form
+        onSubmit={(e) => {
+          submitHandler(e);
+        }}
+        className="flex items-start p-10 gap-4 flex-col justify-between"
+      >
+       
           <input
             type="text"
             placeholder="Enter Notes Heading"
@@ -33,8 +36,11 @@ const App = () => {
           <button className="text-black w-full  bg-white border-2 px-5 py-2 hover:bg-blue-400 hover:text-black rounded-2xl">
             Add Note
           </button>
-        </div>
       </form>
+      <div className="flex flex-wrap p-10 ">
+        <div className="h-32 w-32 rounded-2xl bg-white">
+        </div>
+      </div>
     </div>
   );
 };

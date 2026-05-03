@@ -1,10 +1,15 @@
 import React from "react";
-
 const App = () => {
+  const submitHandler = ()=>{
+    console.log('form submitted');
+    
+  }
+
+
   return (
     <div className="h-screen bg-black ">
       <div>
-        <nav className="h-20 flex justify-between p-10 ">
+        <nav className="h-20 flex justify-between p-10">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
           <img
             className="rotate-y-180 h-15  w-15"
@@ -13,7 +18,6 @@ const App = () => {
           />
         </nav>
       </div>
-
       <form className="flex items-start p-10 justify-between">
         <div className="flex items-start flex-col w-1/2 gap-4 ">
           <input

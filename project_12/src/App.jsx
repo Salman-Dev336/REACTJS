@@ -5,8 +5,8 @@ const App = () => {
     e.preventDefault();
   };
   return (
-    <div className="h-screen bg-black p-10  ">
-      <div>
+    <div className="h-screen lg:flex bg-black p-10  ">
+      {/* <div>
         <nav className="h-20 flex justify-between ">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
           <img
@@ -15,12 +15,12 @@ const App = () => {
             alt=""
           />
         </nav>
-      </div>
+      </div> */}
       <form
         onSubmit={(e) => {
           submitHandler(e);
         }}
-        className="flex items-start p-10 gap-4 flex-col justify-between"
+        className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
       >
        
           <input
@@ -37,7 +37,7 @@ const App = () => {
             Add Note
           </button>
       </form>
-      <div className="flex flex-wrap p-10 ">
+      <div className="flex flex-wrap p-10  bg-gray-900">
         <div className="h-32 w-32 rounded-2xl bg-white">
         </div>
       </div>

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 const App = () => {
   const [title, settitle] = useState("");
+  const [details, setdetails] = useState("")
 
   const submitHandler = (e) => {
-    console.log(title);
+    console.log(title, details);
     e.preventDefault();
     settitle('')
+    setdetails('')
   };
   return (
     <div className="h-screen bg-black ">
@@ -45,6 +47,12 @@ const App = () => {
             type="text"
             className="px-5 w-full py-2 rounded border-2 h-30 text-start text-white font-medium "
             placeholder="Enter details"
+            value={details}
+            onChange={(e)=>{
+              // console.log(e.target.value);
+              
+              setdetails(e.target.value)
+            }}
           />
           <button className="text-black w-full  bg-white border-2 px-5 py-2 hover:bg-blue-400 hover:text-black rounded-2xl">
             Add Note

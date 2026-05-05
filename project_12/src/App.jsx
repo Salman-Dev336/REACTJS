@@ -37,21 +37,13 @@ const App = () => {
             Add Note
           </button>
         </form>
-        <div className="  p-10 lg:w-1/2 flex bg-amber-400 flex-col items-start ">
+        <div className="  p-10 lg:w-1/2 flex flex-col items-start ">
           <h1 className="text-white text-2xl font-bold">Your Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
+           
           </div>
         </div>
       </div>

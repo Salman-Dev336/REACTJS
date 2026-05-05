@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 const App = () => {
+  const [title, settitle] = useState("");
+
   const submitHandler = (e) => {
-    console.log("form submitted");
+    console.log(title);
     e.preventDefault();
+    settitle('')
   };
-  const [title, settitle] = useState('')
   return (
     <div className="h-screen bg-black ">
       <div>
@@ -26,11 +28,19 @@ const App = () => {
         >
           <h1 className="text-white text-3xl font-bold">Add Notes</h1>
 
+          {/* pehla input for notes heading */}
           <input
             type="text"
             placeholder="Enter Notes Heading"
             className="px-5 w-full py-2 border-2 rounded text-white font-medium"
+            value={title}
+            onChange={(e)=>{
+              // console.log(e.target.value);
+              settitle(e.target.value)
+              
+            }}
           />
+          {/* dusra input for notes details */}
           <textarea
             type="text"
             className="px-5 w-full py-2 rounded border-2 h-30 text-start text-white font-medium "

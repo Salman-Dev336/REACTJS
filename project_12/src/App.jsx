@@ -23,6 +23,8 @@ const App = () => {
           }}
           className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
         >
+          <h1 className="text-white text-2xl font-bold">Add Notes</h1>
+
           <input
             type="text"
             placeholder="Enter Notes Heading"
@@ -37,12 +39,13 @@ const App = () => {
             Add Note
           </button>
         </form>
-        <div className="  p-10 lg:w-1/2 flex flex-col items-start ">
+        <div className="  p-10 lg:w-1/2 flex border-l-2 border-white flex-col items-start ">
           <h1 className="text-white text-2xl font-bold">Your Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
+            
            
           </div>
         </div>

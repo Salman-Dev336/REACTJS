@@ -2,10 +2,16 @@ import React, { useState } from "react";
 const App = () => {
   const [title, settitle] = useState("");
   const [details, setdetails] = useState("")
+  const [task, settask] = useState([])
 
   const submitHandler = (e) => {
     console.log(title, details);
     e.preventDefault();
+
+    const copyTask = [...task];
+    // console.log(task);
+    
+
     settitle('')
     setdetails('')
   };
@@ -54,7 +60,7 @@ const App = () => {
               setdetails(e.target.value)
             }}
           />
-          <button className="text-black w-full  bg-white border-2 px-5 py-2 hover:bg-blue-400 hover:text-black rounded-2xl">
+          <button className="text-black w-full  bg-white border-2 px-5 py-2  active:bg-blue-400 active:scale-95 hover:text-black rounded-2xl">
             Add Note
           </button>
         </form>

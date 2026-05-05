@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 const App = () => {
   const [title, settitle] = useState("");
-  const [details, setdetails] = useState("")
-  const [task, settask] = useState([])
+  const [details, setdetails] = useState("");
+  const [task, settask] = useState([]);
 
   const submitHandler = (e) => {
     console.log(title, details);
@@ -10,10 +10,14 @@ const App = () => {
 
     const copyTask = [...task];
     // console.log(task);
+    copyTask.push({title, details})
+    settask(copyTask);
+    console.log(copyTask);
+
     
 
-    settitle('')
-    setdetails('')
+    settitle("");
+    setdetails("");
   };
   return (
     <div className="h-screen bg-black ">
@@ -42,10 +46,9 @@ const App = () => {
             placeholder="Enter Notes Heading"
             className="px-5 w-full py-2 border-2 rounded text-white font-medium"
             value={title}
-            onChange={(e)=>{
+            onChange={(e) => {
               // console.log(e.target.value);
-              settitle(e.target.value)
-              
+              settitle(e.target.value);
             }}
           />
           {/* dusra input for notes details */}
@@ -54,10 +57,10 @@ const App = () => {
             className="px-5 w-full py-2 rounded border-2 h-30 text-start text-white font-medium "
             placeholder="Enter details"
             value={details}
-            onChange={(e)=>{
+            onChange={(e) => {
               // console.log(e.target.value);
-              
-              setdetails(e.target.value)
+
+              setdetails(e.target.value);
             }}
           />
           <button className="text-black w-full  bg-white border-2 px-5 py-2  active:bg-blue-400 active:scale-95 hover:text-black rounded-2xl">

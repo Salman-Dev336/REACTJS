@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="h-screen bg-black ">
       <div>
-        <nav className="h-20 flex justify-between">
+        <nav className="h-1/12 flex justify-between">
           <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
           <img
             className="rotate-y-180 h-15  w-15"
@@ -37,9 +37,9 @@ const App = () => {
             Add Note
           </button>
         </form>
-        <div className="  p-10 lg:w-1/2 bg-gray-900 flex flex-col items-start">
-          <h1 className="text-white text-xl font-bold">Your Notes</h1>
-          <div className="flex flex-wrap gap-5 mt-10 overflow-auto h-135">
+        <div className="  p-10 lg:w-1/2 flex bg-amber-400 flex-col items-start ">
+          <h1 className="text-white text-2xl font-bold">Your Notes</h1>
+          <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
@@ -52,10 +52,6 @@ const App = () => {
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
             <div className="h-52 w-40 rounded-2xl bg-white"></div>
-
-
-
-
           </div>
         </div>
       </div>

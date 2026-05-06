@@ -12,7 +12,7 @@ const App = () => {
     // console.log(task);
     copyTask.push({ title, details });
     settask(copyTask);
-    console.log(copyTask);
+    // console.log(copyTask);
 
     settitle("");
     setdetails("");
@@ -68,9 +68,9 @@ const App = () => {
         <div className="  p-10 lg:w-1/2 flex lg:border-l-2 border-white flex-col items-start ">
           <h1 className="text-white text-3xl font-bold">Recent Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
-            <div className="h-52 w-40 rounded-2xl bg-white"></div>
+            {task.map(function(){
+              return   <div className="h-52 w-40 rounded-2xl bg-white"></div>
+            })}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const App = () => {
   const [task, settask] = useState([]);
 
   const submitHandler = (e) => {
-    console.log(title, details);
+    // console.log(title, details);
     e.preventDefault();
 
     const copyTask = [...task];
@@ -22,7 +22,10 @@ const App = () => {
   const deleteNote = (index)=>{
     // console.log('note deleted ');
     const copyTask = [...task]
-    console.log(index);
+    // console.log(index);
+    copyTask.splice(index, 1)
+
+    settask(copyTask)
     
     
 

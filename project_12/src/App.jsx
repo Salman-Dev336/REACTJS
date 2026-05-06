@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { X } from 'lucide-react';
 const App = () => {
   const [title, settitle] = useState("");
   const [details, setdetails] = useState("");
@@ -69,9 +70,10 @@ const App = () => {
           <h1 className="text-white text-3xl font-bold">Recent Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
             {task.map(function(e, index){
-              return   <div key={index} className="h-52 w-40 rounded-2xl p-4 bg-cover bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')]">
-                <h3 className=" text-2xl font-bold leading-tight mt-3">{e.title}</h3>
-                <p className="leading-4 mt-3 font-serif text-gray-700" >{e.details}</p>
+              return   <div key={index} className="relative h-52 w-40 rounded-2xl py-8 px-5 bg-cover bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')]">
+                <h2 className="absolute top-7 right-3 border-1 bg-red-500"><X/></h2>
+                <h3 className=" text-2xl font-bold leading-tight mt-5">{e.title}</h3>
+                <p className="leading-4 mt-2 font-serif text-gray-700" >{e.details}</p>
               </div>
             })}
           </div>

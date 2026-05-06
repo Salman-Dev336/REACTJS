@@ -10,11 +10,9 @@ const App = () => {
 
     const copyTask = [...task];
     // console.log(task);
-    copyTask.push({title, details})
+    copyTask.push({ title, details });
     settask(copyTask);
     console.log(copyTask);
-
-    
 
     settitle("");
     setdetails("");

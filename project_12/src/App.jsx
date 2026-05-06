@@ -17,7 +17,18 @@ const App = () => {
 
     settitle("");
     setdetails("");
-  };
+  }
+
+  const deleteNote = (index)=>{
+    // console.log('note deleted ');
+    const copyTask = [...task]
+    console.log(index);
+    
+    
+
+  }
+
+
   return (
     <div className="h-screen bg-black ">
       <div>
@@ -67,14 +78,16 @@ const App = () => {
         </form>
         <div className="  p-10 lg:w-1/2 flex lg:border-l-2 border-white flex-col items-start ">
           <h1 className="text-white text-3xl font-bold">Recent Notes</h1>
-          <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
+          <div className="flex flex-wrap gap-5 mt-10  h-[80%] overflow-auto  ">
             {task.map(function (e, index) {
               return (
                 <div
                   key={index}
                   className="relative h-52 w-40 rounded-2xl py-8 px-5 bg-cover bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')]"
                 >
-                  <h2 className="absolute top-7 right-3 rounded-3xl bg-red-500">
+                  <h2 onClick={()=>{
+                    deleteNote(index)
+                  }} className="absolute top-7 right-3 rounded-3xl bg-red-500">
                     <X size={16} color="#fdfcfc" strokeWidth={3} />{" "}
                   </h2>
                   <h3 className=" text-2xl font-bold leading-tight mt-5">

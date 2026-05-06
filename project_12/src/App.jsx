@@ -69,9 +69,9 @@ const App = () => {
           <h1 className="text-white text-3xl font-bold">Recent Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  max-h-141.5 overflow-auto  ">
             {task.map(function(e, index){
-              return   <div key={index} className="h-52 w-40 rounded-2xl bg-white">
-                <h3 className="p-2 text-2xl font-bold">{e.title}</h3>
-                <p className="p-2 ">{e.details}</p>
+              return   <div key={index} className="h-52 w-40 rounded-2xl p-4 bg-white">
+                <h3 className=" text-2xl font-bold leading-tight ">{e.title}</h3>
+                <p className="leading-4 mt-1 font-serif" >{e.details}</p>
               </div>
             })}
           </div>

@@ -36,7 +36,7 @@ const App = () => {
     <div className="h-screen bg-black ">
       <div>
         <nav className="h-1/12 flex justify-between">
-          <h3 className="text-white font-bold text-xl font-serif">My Notes</h3>
+          <h3 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text font-bold text-xl font-serif">My Notes</h3>
           <img
             className="rotate-y-180 h-15  w-15"
             src="https://static.vecteezy.com/system/resources/thumbnails/049/578/155/small/a-black-and-white-drawing-of-a-man-writing-png.png"
@@ -51,7 +51,7 @@ const App = () => {
           }}
           className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
         >
-          <h1 className="text-white text-3xl font-bold">Add Notes</h1>
+          <h1 className="text-3xl font-bold bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text">Add Notes</h1>
 
           {/* pehla input for notes heading */}
           <input
@@ -80,7 +80,7 @@ const App = () => {
           </button>
         </form>
         <div className="  p-10 lg:w-1/2 flex lg:border-l-2 border-white flex-col items-start ">
-          <h1 className="text-white text-3xl font-bold">Recent Notes</h1>
+          <h1 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text text-3xl font-bold">Recent Notes</h1>
           <div className="flex flex-wrap gap-5 mt-10  h-[80%] overflow-auto  ">
             {task.map(function (e, index) {
               return (

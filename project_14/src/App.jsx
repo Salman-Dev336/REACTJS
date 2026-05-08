@@ -20,15 +20,16 @@ const App = () => {
     // {data} this is destructuring
 
     const response = await axios.get("https://picsum.photos/v2/list");
-    // console.log(response.data);
+    console.log(response.data);
+    
     setdata(response.data);
   };
   return (
     <div>
       <button onClick={getData}>get data</button>
       <div>
-        {data.map(function(){
-          return <h3>hello</h3>
+        {data.map(function(e, index){
+          return <h3>{index}{e.author}{e.url}</h3>
         })}</div>
     </div>
   );

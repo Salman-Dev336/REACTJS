@@ -29,7 +29,7 @@ const App = () => {
       <button onClick={getData}>get data</button>
       <div>
         {data.map(function(e, index){
-          return <h3>{index}{e.author}{e.url}</h3>
+          return <h3>{index}{e.author}</h3>
         })}</div>
     </div>
   );

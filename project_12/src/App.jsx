@@ -17,26 +17,24 @@ const App = () => {
 
     settitle("");
     setdetails("");
-  }
+  };
 
-  const deleteNote = (index)=>{
+  const deleteNote = (index) => {
     // console.log('note deleted ');
-    const copyTask = [...task]
+    const copyTask = [...task];
     // console.log(index);
-    copyTask.splice(index, 1)
+    copyTask.splice(index, 1);
 
-    settask(copyTask)
-    
-    
-
-  }
-
+    settask(copyTask);
+  };
 
   return (
     <div className="h-screen bg-black ">
       <div>
         <nav className="h-1/12 flex justify-between">
-          <h3 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text font-bold text-xl font-serif">My Notes</h3>
+          <h3 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text font-bold text-xl font-serif">
+            My Notes
+          </h3>
           <img
             className="rotate-y-180 h-15  w-15"
             src="https://static.vecteezy.com/system/resources/thumbnails/049/578/155/small/a-black-and-white-drawing-of-a-man-writing-png.png"
@@ -51,7 +49,9 @@ const App = () => {
           }}
           className="flex items-start p-10 gap-4 flex-col lg:w-1/2 "
         >
-          <h1 className="text-3xl font-bold bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text">Add Notes</h1>
+          <h1 className="text-3xl font-bold bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text">
+            Add Notes
+          </h1>
 
           {/* pehla input for notes heading */}
           <input
@@ -80,7 +80,9 @@ const App = () => {
           </button>
         </form>
         <div className="  p-10 lg:w-1/2 flex lg:border-l-2 border-white flex-col items-start ">
-          <h1 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text text-3xl font-bold">Recent Notes</h1>
+          <h1 className="bg-linear-to-r from-red-600 to-blue-500 text-transparent bg-clip-text text-3xl font-bold">
+            Recent Notes
+          </h1>
           <div className="flex flex-wrap gap-5 mt-10  h-[80%] overflow-auto  ">
             {task.map(function (e, index) {
               return (
@@ -88,9 +90,12 @@ const App = () => {
                   key={index}
                   className="relative h-52 w-40 rounded-2xl py-8 px-5 bg-cover bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')]"
                 >
-                  <h2 onClick={()=>{
-                    deleteNote(index)
-                  }} className="absolute top-7 right-3 rounded-3xl bg-red-500">
+                  <h2
+                    onClick={() => {
+                      deleteNote(index);
+                    }}
+                    className="absolute top-7 right-3 rounded-3xl bg-red-500"
+                  >
                     <X size={16} color="#fdfcfc" strokeWidth={3} />{" "}
                   </h2>
                   <h3 className=" text-2xl font-bold leading-tight mt-5">

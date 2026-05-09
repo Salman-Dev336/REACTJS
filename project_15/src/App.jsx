@@ -2,16 +2,17 @@ import React from 'react'
 
 
 const random = ()=>{
-  console.log('hello salman');
+  const a = Math.random()
+  console.log(a);
   
 }
 
 const App = () => {
-
+ random()
 
   return (
     <div>
-      <button onClick={random}>click here</button>
+      <button>click here</button>
     </div>
   )
 }

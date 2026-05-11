@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [num, setnum] = useState(0);
+  const [num2, setnum2] = useState(0);
 
   useEffect(function () {
     console.log("use effect");
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div>
       <h1>{num}</h1>
+      <h1>{num2}</h1>
       <button
         onClick={() => {
           setnum(20);

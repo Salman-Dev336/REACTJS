@@ -15,8 +15,11 @@ const App = () => {
       <h1>{num}</h1>
       <h1>{num2}</h1>
       <button
-        onClick={() => {
+        onMouseEnter={() => {
           setnum(num+1);
+          
+        }}
+        onMouseLeave={()=>{
           setnum2(num2+1);
         }}
       >

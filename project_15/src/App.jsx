@@ -8,7 +8,7 @@ const App = () => {
   const [num2, setnum2] = useState(100);
   useEffect(function () {
     console.log("use effect");
-  }, []);
+  }, [num]);
   // random();
   return (
     <div>

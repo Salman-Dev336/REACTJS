@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 
 // const random = () => {
@@ -7,6 +7,7 @@ import React, { useEffect } from "react";
 // };
 
 const App = () => {
+  const [num, setnum] = useState(0)
 
   useEffect(function(){
   console.log("use effect");
@@ -16,7 +17,10 @@ const App = () => {
 
   return (
     <div>
-      <button>click here</button>
+      <h1>{num}</h1>
+      <button onClick={()=>{
+        setnum(20)
+      }}>click here</button>
     </div>
   );
 };

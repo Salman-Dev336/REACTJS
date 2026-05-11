@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [num, setnum] = useState(0);
-  const [num2, setnum2] = useState(0);
+  const [num2, setnum2] = useState(100);
 
   useEffect(function () {
     console.log("use effect");
@@ -20,7 +20,8 @@ const App = () => {
       <h1>{num2}</h1>
       <button
         onClick={() => {
-          setnum(20);
+          setnum(num+1);
+          setnum2(num2+1);
         }}
       >
         click here
@@ -28,5 +29,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;

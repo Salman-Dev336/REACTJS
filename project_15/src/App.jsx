@@ -19,10 +19,7 @@ const App = () => {
    const bChanging = ()=>{
     // setb(b+20);
     console.log('b ki value change hogai');
-    
-    
   }
-
   useEffect(function(){
     aChanging()
     console.log('useeffect is running');

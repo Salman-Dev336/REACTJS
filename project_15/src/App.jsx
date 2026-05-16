@@ -4,15 +4,17 @@ import React, { useEffect, useState } from "react";
 //   console.log(a);
 // };
 const App = () => {
-  const [num, setnum] = useState(0);
-  const [num2, setnum2] = useState(100);
-  useEffect(function () {
-    console.log("use effect");
-  }, [num]);
+  // const [num, setnum] = useState(0);
+  // const [num2, setnum2] = useState(100);
+  // useEffect(function () {
+  //   console.log("use effect");
+  // }, [num]);
   // random();
   return (
     <div>
-      <h1>{num}</h1>
+
+      
+      {/* <h1>{num}</h1>
       <h1>{num2}</h1>
       <button
         onMouseEnter={() => {
@@ -24,7 +26,7 @@ const App = () => {
         }}
       >
         click here
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -10,18 +10,24 @@ const App = () => {
 
 
   const aChanging = ()=>{
-        seta(a+10);
+        // seta(a+10);
     console.log('a ki value change hogai');
 
     
   }
 
    const bChanging = ()=>{
-    setb(b+20);
+    // setb(b+20);
     console.log('b ki value change hogai');
     
     
   }
+
+  useEffect(function(){
+    aChanging()
+    console.log('useeffect is running');
+    
+  },[a,])
   // const [num, setnum] = useState(0);
   // const [num2, setnum2] = useState(100);
   // useEffect(function () {
@@ -35,8 +41,12 @@ const App = () => {
       <h1>B :{b}</h1>
 
 
-      <button onClick={aChanging}>change A</button>
-      <button onClick={bChanging}>change B</button>
+      <button onClick={()=>{
+        seta(a+10);
+      }}>change A</button>
+      <button onClick={()=>{
+        setb(b+20);
+      }}>change B</button>
 
 
       {/* <h1>{num}</h1>

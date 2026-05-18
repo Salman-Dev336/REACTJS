@@ -1,20 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between py-4 px-10 bg-cyan-700 items-center">
       <h2 className="text-2xl font-bold">CementO</h2>
       <div className="flex gap-10">
-        <a className="text-medium font-bold" href="/">
+        <Link className="text-medium font-bold" to="/">
           Home
-        </a>
-        <a className="text-medium font-bold" href="/about">
+        </Link>
+        <Link className="text-medium font-bold" to="/about">
           About
-        </a>
-        <a className="text-medium font-bold" href="/products">
+        </Link>
+        <Link className="text-medium font-bold" to="/products">
           Products
-        </a>
-        
+        </Link>
       </div>
     </div>
   );

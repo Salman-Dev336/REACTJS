@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const Contact = () => {
   return (
     <div>
-        <h1>Products</h1>
-        <div className='flex justify-start gap-10 bg-amber-600 py-2 px-10'>
-          <a className="text-medium font-bold" href="/products/men">
+      <div className="flex justify-center gap-10 py-4 px-10">
+        <Link className="text-medium font-bold" to="/products/men">
           Men's Collection
-        </a>
-        <a className="text-medium font-bold" href="/products/women">
+        </Link>
+        <Link className="text-medium font-bold" to="/products/women">
           Women's Collection
-        </a>
-        </div>
-        
+        </Link>
+      </div>
+      <Outlet/>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

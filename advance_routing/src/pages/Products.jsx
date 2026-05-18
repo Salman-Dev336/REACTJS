@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-const Contact = () => {
+const Products = () => {
   return (
     <div>
       <div className="flex justify-center gap-10 py-4 px-10">
@@ -11,10 +11,13 @@ const Contact = () => {
         <Link className="text-medium font-bold" to="/products/women">
           Women's Collection
         </Link>
+        <Link className="text-medium font-bold" to="/products/kids">
+          Kids Collection
+        </Link>
       </div>
       <Outlet/>
     </div>
   );
 };
 
-export default Contact;
+export default Products;

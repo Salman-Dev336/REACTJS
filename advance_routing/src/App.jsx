@@ -6,6 +6,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Men from './pages/Men'
 import Women from './pages/Women'
+import Kids from './pages/Kids'
 import {Route, Routes} from 'react-router-dom'
 import NotFound from './pages/NotFound'
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/products' element={<Products />} > 
         <Route path='men' element={<Men />} />
         <Route path='women' element={<Women />} />
+        <Route path = 'kids' element={<Kids />} />
         </Route>
         
 

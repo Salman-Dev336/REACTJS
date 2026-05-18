@@ -1,6 +1,10 @@
 import React from 'react'
 
 const CourseDetail = () => {
+
+    // const params = useParams();
+    // console.log(params);
+    
   return (
     <div>
         <div className='border-2 border-gray-500 p-4 rounded-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>

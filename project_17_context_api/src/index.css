@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 10vh; */
+  padding: 10px 50px;
+  background-color: rgb(6, 87, 87);
+}
+
+.light{
+  background-color: lightblue;
+}
+
+.dark{
+  background-color: darkslategray;
+}
+
+.nav2{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 60px;
+}

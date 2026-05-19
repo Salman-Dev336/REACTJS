@@ -15,7 +15,7 @@ const Products = () => {
           Kids Collection
         </Link>
       </div>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };
